@@ -20,7 +20,7 @@ We must regiter to continue:
 ![Registration](img/register.png)
 
 
-Two new URLs are available in the main menu.
+After logging in, two new URLs are available in the main menu.
 https://typeselfsub.web.ctfcompetition.com/flag:
 
 ![Flag page](img/flag.png)

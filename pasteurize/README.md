@@ -22,7 +22,7 @@ After submitting some input ...
 
 ![A note](img/note.png)
 
-Note that `onload`-attribute is sanitized to prevent cross-site scripting attacks.
+Note that the `onload`-attribute is sanitized to prevent cross-site scripting attacks.
 
 By submitting an `<img>` tag with a URL we control and clicking on "share with TJMike", we observe that there is a second IP address making a request. Thus, it is clear that the goal of this challenge is to find an XSS attack vector in order to extract the flag from TJMike.
 

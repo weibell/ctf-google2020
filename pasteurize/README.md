@@ -8,21 +8,24 @@ This beginner challenge comes with the following instructions:
 
 > https://pasteurize.web.ctfcompetition.com/
 
-The URL leads to this screen:
+The URL leads to a paste-sharing web application:
 
 ![Initial screen](img/home.png)
 
 
-After submitting some input...
+After submitting some input ...
 
 ![Some input](img/home-input.png)
 
 
-...we are redirected to https://pasteurize.web.ctfcompetition.com/96eaf657-15c6-49f9-9c56-396bdc4fec88:
+... we are redirected to https://pasteurize.web.ctfcompetition.com/96eaf657-15c6-49f9-9c56-396bdc4fec88:
 
 ![A note](img/note.png)
 
-By submitting an `<img>` tag with a URL we control and clicking on "share with TJMike", we observe that there is a second IP address making a request. Thus, it is clear that the goal of this challenge is to perfom an XSS attack on TJMike in order to extract the flag.
+Note that `onload`-attribute is sanitized to prevent cross-site scripting attacks.
+
+By submitting an `<img>` tag with a URL we control and clicking on "share with TJMike", we observe that there is a second IP address making a request. Thus, it is clear that the goal of this challenge is to find an XSS attack vector in order to extract the flag from TJMike.
+
 
 ## Observations
 
